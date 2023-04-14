@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff"); }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 708px; } }
+  @media (min-width: 1300px) {
+    .container {
+      width: 1220px; } }
+
+.button {
+  padding: 11px 12px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+  @media (min-width: 768px) {
+    .button {
+      padding: 14px 26px;
+      font-size: 20px;
+      line-height: 1; } }
+  .button:hover {
+    background-color: #5eaa2f; }
+  .button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f; }
+
+.button--large {
+  font-size: 16px; }
+  @media (min-width: 768px) {
+    .button--large {
+      font-size: 20px; } }
+
+
+.button--secondary {
+  color: #444444;
+  background-color: #f2f2f2; }
+  .button--secondary:hover {
+    background-color: #ebebeb; }
+  .button--secondary:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb; }
+
+.button--fixed {
+  font-size: 16px; }
