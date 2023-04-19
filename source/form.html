@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Подбор программы</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Разобраться с ссылками ниже -->
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+  </head>
+  <body class="page__body">
+    <header class="page___header">
+      <a class="page-header__logo" href="#">
+        <img src="./img/logo-mobile.svg" alt="Логотип Cat Energy">
+      </a>
+      <a href="#">
+        <p class="header___title">Cat energy</p>
+        <!-- Пойдет ли здесь заголовок h1 или нужен p? -->
+      </a>
+      <nav class="main-nav">
+        <div class="page-header__bar">
+          <a class="page-header__logo logo" href="./index.html">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/logo-image-large.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-image-medium.svg">
+              <img class="logo__image" src="./img/logo-image-small.svg" width="34" height="38" alt="Cat Energy">
+            </picture>
+            <img class="logo__sign" src="./img/logo-sign.svg" width="101" height="19" alt="" aria-hidden="true">
+          </a>
+
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="page-main__header promo">
+        <h1 class="promo__heading">Подбор программы</h1>
+      </header>
+      <section class="page-main__section form">
+        <div class="form__container container">
+          <h2 class="visually-hidden">Форма подбора программы</h2>
+          <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="form__body" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Данные кота</legend>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="field-group">
+                    <span class="field__lead">Имя:*</span>
+                    <input class="field__lead" name="cat-name" type="text" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field-group">
+                    <span class="field__lead">Вес(кг):*</span>
+                    <input class="field__lead" name="cat-weight" type="number" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field-group">
+                    <span class="field__lead">Возраст (лет):*</span>
+                    <input class="field__lead" name="cat-age" type="number" placeholder="7" required>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Цель программы</legend>
+                <ul class="field-group__list">
+                  <li class="field-group__item">
+                    <label class="control control--radio">
+                      <input class="control__input" name="target" type="radio" value="weightloss">
+                      <span class="control__input">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="field-group__item">
+                    <label class="control control--radio">
+                      <input class="control__input" name="target" type="radio" value="weightgain">
+                      <span class="control__input">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="field-group__item">
+                    <label class="control control--radio">
+                      <input class="control__input" name="target" type="radio" value="advice">
+                      <span class="control__input">Не знаю (нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+      <footer class="page-main__footer contacts">
+        <h2 class="visually-hidden">контакты</h2>
+        <p class="contacts__heading">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__map" src="img/map.png" alt="Магазин на карте" width="320" height="362">
+      </footer>
+    </main>
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo" href="#" >
+        <img class="logo__image" src="./img/logo-sign.svg" width="128" height="24" alt="Cat Energy">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="page-footer__developer developer" href="https://htmlacademy.ru/study">
+        <span class="visually-hidden">Разработано в</span>
+        HTML Academy
+        <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">
+          <use xlink:href="#logo-academy"></use>
+          <!-- Лого Академии не отображается, надо разобраться -->
+        </svg>
+        <!-- The aria-hidden attribute can be used to hide non-interactive content from the accessibility API. Adding aria-hidden="true" to an element removes that element and all of its children from the accessibility tree. -->
+      </a>
+    </footer>
+
+
+  </body>
+</html>
